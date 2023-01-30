@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Ksenia</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#"><img src="img/logo3-removebg-preview.png" alt="logo"></a>
+                </div>
+                <div class="header__menu menu">
+                    <button type="button" class="menu__icon icon-menu"><span></span></button>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link" data-goto-header data-goto="#quotation">Цитати</a></li>
+                            <li class="menu__item"><a href='#titles' class="menu__link">Титули</a></li>
+                            <li class="menu__item"><a href="#facts" class="menu__link" data-goto-header data-goto="#facts">Об'єктивні факти</a></li>
+                            <li class="menu__item"><a href="#game" class="menu__link" data-goto-header data-goto="#bonus">Бонус</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="player">
+                    <audio id="av-tag" controls><source src="audio/Kyle Andrews - Sushi (dizer.net).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                    </audio>
+                    <button class="play-btn"> <span class="triangle"></span></button>
+                 
+                    <input id="cur-time" type="range" min="0" max="10" step="0">
+                    <div id="speaker">🔊</div>
+                    <input id="volume" type="range" min="0" max="10">
+                    </div>
+            </div>
+        </header>
+        <main class="home">
+          
+                <div class="home__sections" data-fp>
+                    <div data-item class="home__main-slider main-slider swiper" data-fp-section>
+                        <div class="main-slider__wrapper swiper-wrapper">
+                            <div class="main-slider__slide swiper-slide first-slide">
+                                <img class='main-slider__bg' src="img/bush.jfif" alt="ks">
+                                <div class="main-slider__container">
+                                   <div class='main-slider__photo'><img src="img/ping.jpg" alt="ks"></div>
+                                    <div class="main-slider__body">
+                                        <h3 class="main-slider__title title">Дорога Ксеня!</h3>
+                                        <p class="main-slider__text">Вітаю тебе з Днем народження!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <img class='main-slider__bg' src="img/sofa3.jpg" alt="ks">
+                                <div class="main-slider__container second-slide">
+                                    
+                                    <div class="main-slider__body">
+                                        <h3 class="main-slider__title title">Ти - диво,</h3>
+                                        <p class="main-slider__text">Яке чомусь трапилося зі мною</p>
+                                    </div>
+                                    <div class="main-slider__photo"><img src="img/potato.jpg" alt="potato"></div>
+                                </div>
+                            </div>
+                            <div class="main-slider__slide swiper-slide">
+                                <img class='main-slider__bg' src="img/olives.webp" alt="ks">
+                                <div class="main-slider__container">
+                                    <div class="main-slider__photo"><img src="img/clock.jpg" alt="clock"></div>
+                                    <div class="main-slider__body white-slide">
+                                        <h3 class="main-slider__title title">З тобою</h3>
+                                        <p class="main-slider__text">Час летить швидко :)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider__bullets bullets">
+                            <div class="bullets__container">
+                                <div class="bullets__items">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                         
+                <div data-item class="homes__facts" id='facts' data-watch="navigator"  data-fp-section>
+                 
+                    <div class="facts__container">
+                        <div class="greeting__container">
+                            Дуже сподіваюся, ці дрібнички тебе змусять усміхнутися. Твоя посмішка багато означає :)
+                        </div>
+                        <h2 class="facts__title">Об'єктивні факти</h2>
+                        <div class="facts__row">
+                            <p class="facts__fact left">Ксеня - мила істота, яка з'явилася на світ однієї п'ятниці лютого 2001 року. Вона вважає себе ще й вредною та зловісно. Але вона сама здогадується, що від цього вона заворожує не менше. Це - факти.</p>
+                            <p class="facts__fact right">Ксеня вважає п'ятниці драматичними нагодами для істеричного сміху. Однак це дуже суб'єктивно, адже її поява на світ у п'ятницю виправдовує цей день. Це - факти. </p>
+                            <p class="facts__fact left">Ксені хочеться побажати усього найкращого, що можна помислити у кращому з можливих світів. Вона має чуйне серце, любить котиків і фото з ними, є напрочуд кмітливою і красивою, а ще ненароком краде серця. Це - факти.</p>
+                            <p class="facts__fact right">Ксеня встигла уже натерпітися через драматичні неділі і не лише неділі. Це, на жаль, також факти, за які мені шкода. А ще ти мені дуже подобаєшся, це - суб'єктивний факт, за який мені зовсім не шкода.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-item class="homes__bonus" id="bonus"  data-fp-section>
+                    <div class="bonus__container">
+                        <h2 class="bonus__title">
+                            Бонус. Тицьни на ложку. Тобі сподобається :) 
+                            <div class="bonus__text">
+                                Правда мило? (:
+                            </div>
+                        </h2>
+                        <div class="bonus__img">
+                            <img src="img/banka.png" alt="#" class="bonus__banka">
+                            <div class="bonus__spoon"> 
+                                <button href="#"><img src="img/spoon-removebg-preview.png" alt="#"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-item class="homes__bonus" id="bonus"  data-fp-section>
+                    <div class="bonus__container">
+                        <h2 class="bonus__title">
+                            Бонус. Тицьни на ложку. Тобі сподобається :) 
+                            <div class="bonus__text">
+                                Правда мило? (:
+                            </div>
+                        </h2>
+                        <div class="bonus__img">
+                            <img src="img/banka.png" alt="#" class="bonus__banka">
+                            <div class="bonus__spoon"> 
+                                <button href="#"><img src="img/spoon-removebg-preview.png" alt="#"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>   
+          
+                
+        </main>
+        <footer class="footer">
+            
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,67 @@
+
+.player * {
+
+
+}
+.play-btn{
+
+}
+#track{
+display: none;
+  
+}
+#cur-time{
+    @include adaptiveValue("width", 129, 80);
+}
+.player audio {
+display: none;
+}
+.player{
+    z-index: 10;
+display: flex;
+@include adaptiveValue("gap", 15, 3);
+
+align-items: center;
+border: 2px solid #120a6f;
+background: #0c6525c0;
+@include adaptiveValue("width", 300, 200);
+padding: 10px;
+border-radius: 20px;
+}
+.player input[type="range"]
+{
+  -webkit-appearance: none;
+height: 5px;
+border-radius: 5px;
+background: rgb(159, 197, 32);
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+.player input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background: #4CAF50;
+cursor: pointer;
+}
+
+.player input[type="range"]::-moz-range-thumb {
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: #4CAF50;
+cursor: pointer;
+}
+#volume {
+@include adaptiveValue("width", 60, 40);
+}
+
+.pause-smile{
+
+  transition: all 0.3s ease-in;
+  transform: rotate(180deg);
+}
